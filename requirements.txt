@@ -140,3 +140,4 @@ xxhash==4.0.0
 zope.event==6.2
 zope.interface==8.6
 mcp openai
+pytest-mock
