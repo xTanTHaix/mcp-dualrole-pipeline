@@ -9,6 +9,13 @@ A dual-mode, zero-token-cost local engineering engine built on the Model Context
 
 ---
 
+| 🧩 The MCP Dual-Role Pipeline | ⚙️ Engineering Autonomous Reliability |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/d8b24432-4dd5-4d80-8faa-5cc50453a333" alt="The MCP Dual-Role Pipeline" width="100%"> | <img src="https://github.com/user-attachments/assets/9fbe021e-dc55-4563-ada4-9e268d9a830c" alt="Engineering Autonomous Reliability" width="100%"> |
+| *A framework for synchronized, context-aware AI workflows* | *Pairs an Executor with a Critic in a localized environment* |
+
+---
+
 ## ✨ Core Capabilities
 
 | Feature | Description |
@@ -19,6 +26,13 @@ A dual-mode, zero-token-cost local engineering engine built on the Model Context
 | **Dual Data Persistence** | Records execution metrics into SQLite (`audit_history.db`) and exports atomic JSON telemetry (`audit_logs/`) suitable for DPO fine-tuning datasets. |
 | **Live Discord Telemetry** | Background daemon monitors audit output files in real time and pushes structured embeds directly to Discord. |
 | **Dynamic Model Discovery** | Automatically queries LM Studio's active model endpoint, bypassing embedding engines dynamically. |
+
+---
+
+| 🌉 The Standardized Context Bridge | ⚖️ Separation of Concerns: Dual-Role Dynamic |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/d8e5092b-824b-47d0-b972-b9a3be7f3c3e" alt="The Standardized Context Bridge" width="100%"> | <img src="https://github.com/user-attachments/assets/b13a0892-173d-42ef-bca2-df2dfa2c3a9f" alt="Separation of Concerns" width="100%"> |
+| *Decoupled Read/Write operations via universal MCP layer* | *Executor (generation) vs Reviewer (zero-temperature validation)* |
 
 ---
 
@@ -63,6 +77,15 @@ Audits incoming implementations against 10 strict defensive engineering rules:
 * **Defensive Boundaries:** Type hints, data contracts via dataclasses, bounded loop guards.
 * **Deterministic Contract:** Enforces a rigid feedback schema (`STATUS: APPROVED` or `STATUS: REJECTED`).
 
+---
+
+| 🗺️ Pipeline Architecture Mapping | ⏱️ Chronological Execution Workflow |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/7945c964-c7b0-4f56-8917-f3eb0997c13f" alt="Pipeline Architecture Mapping" width="100%"> | <img src="https://github.com/user-attachments/assets/dfb5a475-f340-46d3-bb42-029f0cc68644" alt="Chronological Execution Workflow" width="100%"> |
+| *Orchestrator routing across MCP server and dual agents* | *Ingest → Query → Synthesize → Audit → Output pipeline* |
+
+---
+
 ### 2. System Architect & Strategist Mode (Activated on Specs/Plans)
 
 Generates system designs for technical prompts without code:
@@ -85,6 +108,13 @@ python watch_audit_logs.py
 * **Automated Polling:** Tracks `.json` additions with debounce guards.
 * **Markdown Formatting:** Renders status tags (`APPROVED`, `REJECTED`), duration metrics, summaries, and issue breakdowns.
 * **Zero Configuration Fallback:** Operates headlessly in the background without halting the core MCP pipeline.
+
+---
+
+| 🔄 The Autonomous Refinement Engine | 📦 Data Routing & State Management Payload |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/7e372054-3f1c-40d1-b1b3-d2ab2d2cfc18" alt="Autonomous Refinement Engine" width="100%"> | <img src="https://github.com/user-attachments/assets/aa9928e9-0a51-4bfa-9056-fd7d5f9ab889" alt="State Management Payload" width="100%"> |
+| *Continuous feedback loop eliminating hallucination drift* | *Strict turn-based JSON schema preventing infinite loops* |
 
 ---
 
@@ -133,6 +163,13 @@ Add the server definition into your client's `mcpServers` configuration (e.g., `
 1. Launch **LM Studio** and load an instruction-tuned model (e.g., `Qwen-2.5-Coder`, `DeepSeek-Coder`).
 2. Open the **Local Server** tab.
 3. Set the port (default: `1234`) and click **Start Server**.
+
+---
+
+| 🏗️ Deployment Dependencies & Infrastructure | 🚀 Pipeline Characteristics & Extensibility |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/f94b0658-bab5-47dd-b0a9-2547062d28dd" alt="Deployment Dependencies" width="100%"> | <img src="https://github.com/user-attachments/assets/c5476f02-ad12-43cb-b2f3-32b3ef952b55" alt="Pipeline Extensibility" width="100%"> |
+| *Modular runtime stack connecting local MCP servers with LLMs* | *Guaranteed context alignment and drop-in extensibility* |
 
 ---
 
